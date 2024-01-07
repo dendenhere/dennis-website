@@ -9,17 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>$( document ).ready(function() {var cbInstance = Chargebee.init({site: "tradealgo-test"});var cbInstance = Chargebee.getInstance();});</script>
     <script>var cbInstance = Chargebee.getInstance();cbInstance.openCheckout
-    ({hostedPage: function() {
-    
-    return $.ajax({
-      url: '/generate_hp_url',
-      data: data,
-      method: 'POST'
-    });
-  },
-  success: function(hostedPageId) {// success callback
-  }
-});
     <meta charset="utf-8">
     <title>Demo Marketplace</title>
     <link href="static/style.css" rel="stylesheet"/>    
