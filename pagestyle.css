@@ -25,6 +25,7 @@
     width: 120px;
     cursor: pointer;
     border-radius: 50%;
+    background-image: url(https://techbaldy.com/);
 }
 .navbar ul li{
     list-style: none;
