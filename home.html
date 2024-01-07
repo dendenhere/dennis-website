@@ -6,8 +6,7 @@
     <script src="//tsgs.refersion.com/tracker/v3/pub_114eef4e0e73611a0d3e.js"></script>
     <script>_refersion(function(){ _rfsn._setSource("CHARGEBEE"); });</script>
     <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="tradealgo-test" data-cb-refersion-enabled="true" ></script>
-    <script> cbInstance.setBusinessEntity(businessEntityId);
-    </script>
+    <script> var cbInstance = Chargebee.getInstance();cbInstance.setBusinessEntity("your_business_entity_id");</script>
     <meta charset="utf-8">
     <title>Demo Marketplace</title>
     <link href="static/style.css" rel="stylesheet"/>    
