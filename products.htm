@@ -1,32 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <script src="//tsgs.refersion.com/tracker/v3/pub_114eef4e0e73611a0d3e.js"></script>
-    <script>_refersion(function(){ _rfsn._setSource("CHARGEBEE"); });</script>
-    <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="tradealgo-test" data-cb-refersion-enabled="true" ></script>
-     <script src="https://js.chargebee.com/v2/chargebee.js"></script>
-     <script type="text/javascript">
-          var cbInstance = Chargebee.init({site: "https://techbaldy.com"});
-          var cbInstance = Chargebee.getInstance();
-          cbInstance.openCheckout({
-               hostedPage: function() {
-                   return $.ajax({
-                     url: '/generate_hp_url',
-                     data: data,
-                     method: 'POST'
-                   });
-                 },
-                 success: function(hostedPageId) {
-                   // success callback
-                 }
-               });
-     </script>
-    <meta charset="utf-8">
-    <title>Products</title>
-    <link rel="stylesheet" href="pagestyle.css">
+     <meta charset="utf-8">
+     <title>Products</title>
+     <link rel="stylesheet" href="pagestyle.css">
 </head>
 <body>
-    <div class="banner">
+     <div class="banner">
            <div class="navbar">
             <img src="logo.png" class="logo"/></a>
             <ul>
@@ -54,3 +34,26 @@
             
         </div>
     </div>
+     <p>My first paragraph.</p>
+     <script src="//tsgs.refersion.com/tracker/v3/pub_114eef4e0e73611a0d3e.js"></script>
+     <script>_refersion(function(){ _rfsn._setSource("CHARGEBEE"); });</script>
+     <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="tradealgo-test" data-cb-refersion-enabled="true" ></script>
+     <script src="https://js.chargebee.com/v2/chargebee.js"></script>
+     <script>
+          var cbInstance = Chargebee.init({site: "https://techbaldy.com"});
+          var cbInstance = Chargebee.getInstance();
+          cbInstance.openCheckout({
+               hostedPage: function() {
+                   return $.ajax({
+                     url: '/generate_hp_url',
+                     data: data,
+                     method: 'POST'
+                   });
+               },
+               success: function(hostedPageId) {
+                   // success callback
+               }
+          });
+     </script>
+</body>
+</html>
