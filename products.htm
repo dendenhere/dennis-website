@@ -6,7 +6,21 @@
     <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="tradealgo-test" data-cb-refersion-enabled="true" ></script>
      <script src="https://js.chargebee.com/v2/chargebee.js"></script>
      <script type="text/javascript">
-          var cbInstance = Chargebee.init({site: "https://techbaldy.com"})
+          var cbInstance = Chargebee.init({site: "https://techbaldy.com"});
+          var cbInstance = Chargebee.getInstance();
+          cbInstance.openCheckout({
+               hostedPage: function() {
+    // We will discuss on how to implement this end point in the next step.
+                   return $.ajax({
+                     url: '/generate_hp_url',
+                     data: data,
+                     method: 'POST'
+                   });
+                 },
+                 success: function(hostedPageId) {
+                   // success callback
+                 }
+               });
      </script>
     <meta charset="utf-8">
     <title>Products</title>
