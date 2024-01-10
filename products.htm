@@ -10,7 +10,6 @@
           var cbInstance = Chargebee.getInstance();
           cbInstance.openCheckout({
                hostedPage: function() {
-    // We will discuss on how to implement this end point in the next step.
                    return $.ajax({
                      url: '/generate_hp_url',
                      data: data,
