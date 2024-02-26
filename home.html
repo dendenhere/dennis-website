@@ -1,18 +1,24 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="//tsgs.refersion.com/tracker/v3/pub_114eef4e0e73611a0d3e.js"></script>
-    <script>_refersion(function(){ _rfsn._setSource("CHARGEBEE"); });</script>
     <meta charset="utf-8">
     <title>Demo Marketplace</title>
+    <script type="module" src="register.js" defer ></script>
     <link href="static/style.css" rel="stylesheet"/>    
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TN20HBTJLP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TN20HBTJLP');
+</script>
 <body>
     <div class="banner">
         <div class="navbar">
-            <img src="static/logo.png" class="logo">
+            <img src="static/logo.png" class="logo" alt="Logo">
             <ul>
                 <li><a href="thankyou.htm">Thank you</a></li>
                 <li><a href="products.htm">Products</a></li>
@@ -21,11 +27,27 @@
                 <li><a href="#">Dividend Alert</a></li>
             </ul>
         </div>
-        <div class="content">  
+    </div>
+    <div class="content">  
             <h1>Welcome to Demo Marketplace</h1>
-            <p>A concept for trial and product.<br>Get your latest alerts on dividend payouts and algo on analysis</p>
-            <button type="button">Start Journey</button>
-            <h2>Work in progress</h2>
+            <p>A concept for trial and product.<br>Get your latest alerts on dividend payouts and algo on analysis</br></p>
+            <form>  
+            <h3>Create Account</h3>
+
+            <label for ="username">Username</label>
+            <input type ="text" value="" id="username" required>
+            
+            <label for ="email">Email</label>
+            <input type="email" value="" id="email" required>
+
+        
+            <label for ="password">Password</label>
+            <input type="password" value="" id="password" required>
+
+            <button id="submit" type="submit">Create Account</button>
+        </form> 
+    </div>
+    </div>
+    </body>
 </body>
 </html>
-    
