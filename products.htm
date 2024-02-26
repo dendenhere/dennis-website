@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <title>Products</title>
+     <link rel="stylesheet" href="pagestyle.css">
+</head>
+<body>
+     <div class="banner">
+           <div class="navbar">
+            <img src="logo.png" class="logo"/></a>
+            <ul>
+                <li><a href="thankyou.htm">Thank you</a></li>
+                <li><a href="products.htm">Products</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Dividend Alert</a></li>
+                         <div class="navbar">
+             </ul>
+        </div>
+        <div class="pagecontent">  
+            <h1>Products</h1>
+             <a href="javascript:void(0)" data-cb-type="checkout" data-cb-item-0="TradeGpt-Pro-USD-Monthly" data-cb-item-0-quantity="1" >Subscribe to PRO</a>     
+            <p>Select the list of products.<br>From footwear, clothing, electronics</p>
+            <br>
+            <div class="container">
+            <div class="entryarea">
+                <input type="text" required="required">
+                <div class="labelline">Search Ticker symbol (Eg:TSLA)</div>
+                 <br>   
+        </div>00
+                </div>       
+            </div>
+            
+        </div>
+    </div>
+     <p>My first paragraph.</p>
+     <script src="//tsgs.refersion.com/tracker/v3/pub_114eef4e0e73611a0d3e.js"></script>
+     <script>_refersion(function(){ _rfsn._setSource("CHARGEBEE"); });</script>
+     <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="tradealgo-test" data-cb-refersion-enabled="true" ></script>
+     <script src="https://js.chargebee.com/v2/chargebee.js"></script>
+     <script>
+          var cbInstance = Chargebee.init({site: "https://techbaldy.com"});
+          var cbInstance = Chargebee.getInstance();
+          cbInstance.openCheckout({
+               hostedPage: function() {
+                   return $.ajax({
+                     url: '/generate_hp_url',
+                     data: data,
+                     method: 'POST'
+                   });
+               },
+               success: function(hostedPageId) {
+                   // success callback
+               }
+          });
+     </script>
+</body>
+</html>
